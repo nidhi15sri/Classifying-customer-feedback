@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auto Customer Feedback Classifier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Customer Feedback Classifier</h1>
+
+    <form id="feedbackForm">
+      <label for="feedback">Enter Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="5" required></textarea>
+      <button type="submit">Classify Feedback</button>
+    </form>
+
+    <div id="output" class="output-box">
+      <h3>Classification Result:</h3>
+      <p><strong>Feedback:</strong> <span id="feedbackText"></span></p>
+      <p><strong>Detected Category:</strong> <span id="categoryText"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
